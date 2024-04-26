@@ -6,9 +6,10 @@ const OWMapiKey = 'c1a94de6eb452edf764a17ba18b411f0';
 // Centered on the Philippines
 var map = L.map('map').setView([12.8797, 121.774], 6);
 
+// Style URL format in XYZ PNG format; see our documentation for more options
 L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
-    maxZoom: 18,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    maxZoom: 20,
+    attribution: '&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>',
 }).addTo(map);
 
 // Remove default zoom control
