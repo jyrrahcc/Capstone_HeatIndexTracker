@@ -7,7 +7,7 @@ const OWMapiKey = 'c1a94de6eb452edf764a17ba18b411f0';
 var map = L.map('map').setView([12.8797, 121.774], 6);
 
 // Style URL format in XYZ PNG format; see our documentation for more options
-L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
+L.tileLayer('https://tiles.stadiamaps.com/styles/alidade_smooth_dark/{z}/{x}/{y}{r}.png?api_key=b255a503-56c2-4d0d-b55f-08a2e8ed5a71', {
     maxZoom: 20,
     attribution: '&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>',
 }).addTo(map);
