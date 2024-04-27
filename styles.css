@@ -36,8 +36,12 @@ body {
 #content {
     position: absolute;
     top: 0px;
-    z-index: 1000;
+    z-index: 2000;
     width: 100%;
+}
+
+.hidden {
+    transform: translateY(400px);
 }
 
 header {
@@ -77,12 +81,20 @@ h1 {
 
 #search-input:focus {
     outline: none;
+    box-shadow: 0px 0px blue;
 }
 
 #search-button {
     color: var(--background-color);
+    cursor: pointer;
     padding: 10px;
     background-color: var(--primary-color);
+    transition: all 0.3s ease-in;
+}
+
+#search-button:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
 }
 
 #search-results {
@@ -105,6 +117,7 @@ h1 {
 
 #search-results {
     margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #loader {
@@ -125,6 +138,21 @@ h1 {
     max-height: 200px;
     width: 50vw;
     height: 50vw;
+}
+
+#advice {
+    position: fixed;
+    z-index: 2000;
+    width: 100%;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: var(--text-color);
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+#advice > p {
+    margin: 0px;
 }
 
 @media screen and (min-width: 575px) {

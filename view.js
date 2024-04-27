@@ -1,10 +1,5 @@
-const counter = document.getElementById('place-count');
-
-const searchInput = document.getElementById('search-input');
-
-const searchButton = document.getElementById('search-button');
-
-const searchResults = document.getElementById('search-results');
+map = mapInitialize();
+displayMarkers();
 
 searchInput.addEventListener('input', function(){
     var query = searchInput.value.trim();
